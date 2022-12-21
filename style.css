@@ -1,0 +1,301 @@
+@import "./reset.css"; /* Reset css: This allows you to avoid overriding the default browser style https://meyerweb.com/eric/tools/css/reset/ */
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("./assets/fonts/static/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("./assets/fonts/static/Inter-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Inter-ExtraBold";
+  src: url("./assets/fonts/static/Inter-ExtraBold.ttf");
+}
+
+:root {
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body {
+  min-height: 100vh;
+  font-size: 15px;
+  padding: 0 11%;
+  font-family: "Inter-Regular";
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+}
+
+nav {
+  width: 34%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+li:hover a {
+  color: var(--soft-red);
+}
+
+nav a {
+  color: var(--dark-grayish-blue);
+  text-decoration: none;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-article-image-container {
+  width: 100%;
+}
+
+.main-article-image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.main-article {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.main-article-title {
+  font-family: "Inter-ExtraBold";
+  font-size: 4em;
+  width: 40%;
+}
+
+.main-article-content p {
+  font-size: 17px;
+  font-family: "Inter-Regular";
+  line-height: 26px;
+  word-spacing: 4px;
+}
+
+.main-article-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 48%;
+  color: var(--dark-grayish-blue);
+}
+
+.main-article-content a {
+  color: var(--off-white);
+}
+
+.main-article button {
+  letter-spacing: 4px;
+  font-family: "Inter-Bold";
+  font-size: 15px;
+  width: 48%;
+  color: var(--off-white);
+  background-color: var(--soft-red);
+  cursor: pointer;
+  border: none;
+  height: 50px;
+}
+
+button:hover {
+  background-color: var(--very-dark-blue);
+}
+
+.left-section {
+  width: 67%;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 30px;
+  background-color: var(--very-dark-blue);
+  color: var(--off-white);
+  font-family: "Inter-Bold";
+  width: 27%;
+}
+
+.right-section-article-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 90%;
+  padding-top: 30px;
+}
+
+.right-section-article-container article {
+  width: 90%;
+  height: 33%;
+}
+
+.right-section-article-container p {
+  color: var(--off-white);
+}
+
+.right-section h2 {
+  color: var(--soft-orange);
+}
+
+.right-section a:hover {
+  color: var(--soft-orange);
+}
+
+.right-section-title {
+  padding-top: 40px;
+  display: flex;
+  height: 10%;
+}
+
+.right-section-title h2 {
+  font-size: 37px;
+  margin-left: 25px;
+}
+
+.right-section article a {
+  font-size: 20px;
+  color: var(--off-white);
+  text-decoration: none;
+}
+
+.right-section p {
+  color: var(--grayish-blue);
+  font-size: 15px;
+  font-family: "Inter-Regular";
+  height: 82px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: var(--off-white);
+}
+
+.right-section-article-container article:last-child p {
+  border: none;
+}
+
+.bottom-section {
+  display: flex;
+  line-height: 26px;
+  gap: 7rem;
+  margin: 5em 0;
+}
+
+.bottom-section article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-section-image-container {
+  height: 125px;
+}
+
+.bottom-section img {
+  width: auto;
+  height: 100%;
+}
+
+.bottom-section a:hover {
+  color: var(--soft-orange);
+}
+
+.bottom-section a {
+  font-family: "Inter-ExtraBold";
+  color: var(--very-dark-blue);
+  text-decoration: none;
+}
+
+.bottom-article-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  font-family: "Inter-ExtraBold";
+  color: var(--grayish-blue);
+  padding-left: 20px;
+}
+
+.bottom-article-content p {
+  font-family: "Inter-Regular";
+  color: var(--dark-grayish-blue);
+}
+
+.bottom-article-content .bottom-section-numbers {
+  color: var(--grayish-blue);
+  font-size: 1.5em;
+  font-family: "Inter-Bold";
+}
+
+@media screen and (max-width: 395px) {
+  /* Your code here. Do it at the end of the exercise */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    padding: 0 10px;
+    width: auto;
+  }
+
+  .main-article, .main-section {
+    flex-direction: column;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  nav {
+    width: 25px;
+    height: 25px;
+    background-image: url('./assets/images/icon-menu.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .left-section,
+  .right-section,
+  .main-article-content {
+    width: 100%;
+  }
+
+  .main-article-title {
+    width: auto;
+    font-size: 3em;
+  }
+
+  .left-section {
+    margin-bottom: 50px;
+  }
+  
+  .bottom-section {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .main-article-image-container {
+    width: 360px;
+    height: 360px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+}
